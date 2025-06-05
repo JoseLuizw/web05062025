@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PT-BR
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <h1>CALCULADOR</h1>    
+    <hr>
+    <form>
+        digite um valor numérioco:
+    <br>
+        <input type="number" max="10" min="0" id="n1">
+    <br>
+        digite um valor numérioco:
+    <br>
+        <input type="number" max="10" min="0" id="n2">
+    <br>
+        
+    <input type="button" value="calcular" 
+        onclick="calcular()">
+        
+        <h3>Resultado</h3>
+        <p id="resultado"></p>
+    </form>
+    <script>
+        function calcular(){
+        //alert("acho que vc clicou no butão calcular")
+            //entrada
+        const n1 = document.getElementById('n1').value;
+        const n2 = document.getElementById('n2').value;
+            //processamento
+            let soma = n1+n2;
+            //saida
+            document.getElementById('resultado').innertext = soma;
+            alert(n1);
+        }
+    </script>
+</body>
+</html>
